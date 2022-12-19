@@ -45,7 +45,7 @@ class _SettingState extends State<Setting> {
                   child: Transform.scale(
                     scale: 1,
                     child: Switch(
-                      value: IOS,
+                      value: provider.value,
                       onChanged: (value) {
                         setState(() {
                           IOS = value;
